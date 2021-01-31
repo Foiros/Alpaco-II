@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ArttuDevScene.unity
+- path: Assets/Scenes/ArttuDevScene 1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
