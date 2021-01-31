@@ -9,7 +9,7 @@ public abstract class Puzzle : MonoBehaviour
     
     private bool puzzleHasBeenSolved, canBeInteracted;
     
-    private Inventory _inventory;
+    protected Inventory _inventory;
 
     protected void Awake() { _inventory = GameObject.FindGameObjectWithTag("GameController").GetComponent<Inventory>(); }
 
@@ -28,5 +28,5 @@ public abstract class Puzzle : MonoBehaviour
         }
     }
     
-    protected virtual void PuzzleHasBeenSolved() { _inventory.RescueAlpaca(); }
+    protected virtual void PuzzleHasBeenSolved() { _inventory.RescueAlpaca(itemID); }
 }

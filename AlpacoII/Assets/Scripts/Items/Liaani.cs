@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torch : InteractableObject
+public class Liaani : InteractableObject
 {
     protected override void CollectMe()
     {

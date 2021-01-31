@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
    public int alpacasRescued;
-   public List<int> combinationItems;
+
+   public int number1, number2, number3, number4, number5, number6;
 
    public List<GameObject> inventoryImages;
    public List<bool> itemsGathered;
@@ -16,20 +17,17 @@ public class Inventory : MonoBehaviour
    public TextMeshProUGUI alpacaMeter;
 
    private void Start() { alpacaMeter.text = "Alpaca's rescued: " + alpacasRescued; }
+   
 
-   public void CollectItem(int i) 
-   { 
-      itemsGathered[i] = true;
-      AddToInventory(i);
-      CheckForCombinationItems(combinationItems[0], combinationItems[1], combinationItems[2], combinationItems[3]);
-   }
+   public void CollectItem(int i) { AddToInventory(i); }
 
    public void UseItem(int i) { RemoveFromInventory(i); }
 
-   public void RescueAlpaca() 
+   public void RescueAlpaca(int itemID) 
    { 
       alpacasRescued++;
       alpacaMeter.text = alpacaMeter.text = "Alpaca's rescued: " + alpacasRescued; ;
+      RemoveFromInventory(itemID);
    }
 
    private void RemoveFromInventory(int i)
@@ -38,17 +36,22 @@ public class Inventory : MonoBehaviour
       inventoryImages[i].SetActive(false);
    }
    
-   private void AddToInventory(int i) { inventoryImages[i].SetActive(true); }
+   private void AddToInventory(int i) 
+   {  
+      itemsGathered[i] = true; 
+      inventoryImages[i].SetActive(true);
 
-   private void CheckForCombinationItems(int i1, int i2, int i3, int i4)
+      CheckForCombinationItems(number1, number2, number3);
+      CheckForCombinationItems(number4, number5, number6);
+   }
+
+   private void CheckForCombinationItems(int i1, int i2, int i3)
    {
-      if (itemsGathered[i1] && itemsGathered[i2] && itemsGathered[i3])
+      if (itemsGathered[i1] && itemsGathered[i2])
       {
          RemoveFromInventory(i1);
          RemoveFromInventory(i2);
-         RemoveFromInventory(i3);
-         
-         AddToInventory(i4);
+         AddToInventory(i3);
       }
    }
 }

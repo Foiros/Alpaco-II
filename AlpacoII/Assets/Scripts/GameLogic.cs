@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameLogic : MonoBehaviour
 {
     public GameObject victoryBanner;
+
+    public int alpacasToRescue;
     
     private Inventory _inventory;
 
@@ -16,7 +18,7 @@ public class GameLogic : MonoBehaviour
 
     private void CheckIfAlpacasHaveBeenRescued()
     {
-        if (_inventory.alpacasRescued == 1) { StartCoroutine("WaitBeforeMovingToMainMenu"); }
+        if (_inventory.alpacasRescued == alpacasToRescue) { StartCoroutine("WaitBeforeMovingToMainMenu"); }
     }
 
     private IEnumerator WaitBeforeMovingToMainMenu()
@@ -25,6 +27,6 @@ public class GameLogic : MonoBehaviour
         
         yield return new WaitForSeconds(4);
 
-        SceneManager.LoadScene("ArttuDevScene");
+        SceneManager.LoadScene(0);
     }
 }
