@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 0
-  controlID: 88
+  controlID: 61
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 89
+  controlID: 62
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 90
+  controlID: 63
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,11 +346,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1159
-      height: 720
+      height: 741
     m_Scale: {x: 0.61, y: 0.61}
-    m_Translation: {x: 579.5, y: 360}
+    m_Translation: {x: 579.5, y: 370.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -358,9 +358,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -950
-      y: -590.16394
+      y: -607.377
       width: 1900
-      height: 1180.3279
+      height: 1214.754
     m_MinimalGUI: 1
   m_defaultScale: 0.61
   m_LastWindowPixelSize: {x: 1159, y: 741}
@@ -398,23 +398,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be390000
-      m_LastClickedID: 14782
-      m_ExpandedIDs: 54f3ffff5efbffffaa390000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: TorchPlacement
-        m_OriginalName: TorchPlacement
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 14740
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.030055165, y: 38.712944, z: -171.08897}
+    m_Target: {x: 9.962831, y: 3.5204558, z: -191.05527}
     speed: 2
-    m_Value: {x: 0.030055165, y: 38.712944, z: -171.08897}
+    m_Value: {x: 9.081231, y: 2.5421407, z: -190.9217}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 214.96786
+    m_Target: 31.011402
     speed: 2
-    m_Value: 214.96786
+    m_Value: 29.675983
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -699,20 +699,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TestSprites
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 47
   m_LastFolders:
-  - Assets/TestSprites
+  - Assets
   m_LastFoldersGridSize: 47
-  m_LastProjectPath: E:\Yliopisto toita\GitHub\AlpacoII\AlpacoII
+  m_LastProjectPath: E:\Yliopisto toita\GitHub\AlpacoII\Alpaco-II\AlpacoII
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 103e0000
-    m_LastClickedID: 15888
-    m_ExpandedIDs: 00000000363a000000ca9a3b
+    m_SelectedIDs: 923a0000
+    m_LastClickedID: 14994
+    m_ExpandedIDs: 00000000923a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +740,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000363a0000
+    m_ExpandedIDs: 00000000923a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

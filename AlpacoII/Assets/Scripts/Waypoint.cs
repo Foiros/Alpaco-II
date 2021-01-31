@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class Waypoint : MonoBehaviour
 {
-    public Vector3 newCameraPosition, newPlayerPosition;
+    public float newCameraPosition, newPlayerPosition;
 
     public List<Sprite> perfectGraphics, shittyGraphics;
     public List<SpriteRenderer> renderers;
@@ -27,9 +27,9 @@ public class Waypoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _cameraController.ChangeMyPosition(newCameraPosition);
-            player.transform.position = newPlayerPosition;
             _playerMovement.SetIsMovingState(false);
-
+            player.transform.position = new Vector3(player.transform.position.x + newPlayerPosition, player.transform.position.y, player.transform.position.y);
+            
             ChangeGraphics();
         }
     }
